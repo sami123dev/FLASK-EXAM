@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/ejercicio1.css">
+    <title>Examen</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Inicio de Sesion</h2>
+        <form action="/ejercicio2" method="post">
+            <label for="">Ingresa tu nombre</label>
+            <input type="text" name="name" required>
+            <label for="">Ingresa tu contraseña</label>
+            <input type="text" name="pass" required>
+            <button type="submit">Verificar</button>
+            <div style="text-align: center;">
+                <a href="/">Volver</a>
+            </div>
+        </form>
+         <p>{{ welcome_message }}</p>
+    </div>
+</body>
+</html>
